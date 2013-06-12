@@ -1,0 +1,19 @@
+{
+  "name": "Saner PHP Docs",
+  "manifest_version": 2,
+  "version": "1.0",
+  "description": "Kill those useless, horrible comments on php.net",
+  "permissions": [
+      "tabs"
+  ],
+  "icons": {
+    "48" : "icon-48.png",
+    "128" : "icon-128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["http://*.php.net/*"],
+      "js" : ["contentscript.js"]
+    }
+  ]
+}
